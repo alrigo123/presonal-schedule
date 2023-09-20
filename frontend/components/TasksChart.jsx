@@ -21,7 +21,7 @@ const TasksChart = () => {
                 <tbody className="bg-white">
                     <tr>
                         <td className="px-6 py-4 whitespace-nowrap">1</td>
-                        <td className="px-6 py-4 whitespace-nowrap">Tarea de topicos  hacer el mapa</td>
+                        <td className="px-6 py-4 whitespace-nowrap">Tarea de topicos  hacer el mapa o lo del colab</td>
                         <td className="px-6 py-4 whitespace-nowrap">10:23 - 11:45</td>
                         <td className="px-6 py-4 whitespace-nowrap">
                             <button type="button" className="bg-green-700 hover:bg-green-800 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">DONE</button>
