@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'next/link';
 
 const TasksChart = () => {
-    const data = [10, 20, 30, 40, 50];
-
     return (
 
         <div className="flex flex-col overflow-x-scroll">
