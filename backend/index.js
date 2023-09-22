@@ -1,10 +1,15 @@
 import express from 'express';
 import cors from 'cors';
+import db_connection from './db_connection.js';
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  try {
+    res.send('Database is connected');
+  } catch (err) {
+    res.status(500).send('Database connection error');
+  }
 });
 
 app.listen(3456, () => {
