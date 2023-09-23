@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import db_connection from './db_connection.js';
+import { router } from './routes/task.routes.js';
 
 const app = express();
 
@@ -11,6 +11,8 @@ app.get('/', (req, res) => {
     res.status(500).send('Database connection error');
   }
 });
+
+app.use('/api', router);
 
 app.listen(3456, () => {
   console.log('Server is running on port 3456');
